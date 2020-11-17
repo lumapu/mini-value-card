@@ -52,6 +52,8 @@ state_map:
     label: open
 ```
 
+![door](https://user-images.githubusercontent.com/22733082/99452161-7c3e8b80-2923-11eb-987a-0245557eb143.png)
+
 ### minimal card
 ```yaml
 type: 'custom:mini-value-card'
@@ -62,6 +64,8 @@ fontSize: 30
 showChanged: false
 ```
 
-##License
+![volume](https://user-images.githubusercontent.com/22733082/99452207-8d879800-2923-11eb-8892-003fc868c7a6.png)
+
+## License
 
 This project is under the MIT license.

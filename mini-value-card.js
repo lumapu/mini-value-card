@@ -19,10 +19,6 @@ class MiniValueCard extends LitElement {
     }
 
     render() {
-        //console.info(this.hass);
-        //console.info(this.config);
-        const name = this.config.title;
-        const icon = this.config.icon;
         const state = this.hass.states[this.config.entity].state;
         const uom = this.hass.states[this.config.entity].attributes.unit_of_measurement || "";
         const fontSize    = (this.config.fontSize    == undefined) ? 2.4 : (this.config.fontSize / 10);
@@ -32,10 +28,10 @@ class MiniValueCard extends LitElement {
         <ha-card class="flex">
             <div class="header flex">
                 <div class="name flex">
-                    <span class="ellipsis">${name}</span>
+                    <span class="ellipsis">${this.config.title}</span>
                 </div>
                 <div class="icon">
-                    <ha-icon .icon=${icon}></ha-icon>
+                    <ha-icon .icon=${this.config.icon}></ha-icon>
                 </div>
             </div>
             <div class="states flex">
